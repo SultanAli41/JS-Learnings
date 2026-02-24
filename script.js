@@ -111,3 +111,38 @@ var h = [12,13,14];
  }else{
     console.log("B")
  }
+ // practice 2 
+ let isAdmin = true;
+ let islogedin = false ;
+ if (isAdmin || islogedin){
+    console.log("Access granted")// this will run
+ }else{
+    console.log("Access denied")
+ }
+ // practice 3 
+ let temp = 35;
+ if(!(temp<30)){
+    console.log("Today is hot");// this will run
+ }else{
+    console.log("Pleasent")
+ }
+ // Practice 4
+ let a99=0;
+ if(a99){
+    console.log("Truthy");
+ }else{
+    console.log("Falsy")// this will run because 0 is falsy 
+ }
+ // Practice 5-- imp
+ let mark =78;
+ let grade= mark>=90? 'A' : mark>=70 ? "B" : mark >=60 ? "C" : "Fail";
+ console.log(grade);
+// practice 6 -- 
+let points = 120;
+let status = points > 100 ? "Gold" : "points" > 60 ? "Silver" : "Bronze";
+console.log("status")
+// Practice 7 
+let login = true;
+let hasToken = false;
+let access = login && hasToken ? "Allow" : "Deny";
+console.log("access");
