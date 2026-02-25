@@ -98,7 +98,7 @@ a-=5;
 // && AND F && F => False F&&T => False T&&F => False F&&F => False
 //unary ops - -- ++
 // ternary ?:
-l2>13 ? console.log("true") : console.log("False");
+//** l2>13 ? console.log("true") : console.log("False");
 // typeof -- use to check type of value
 //instanceof -- use with refrence value 
 var h = [12,13,14];
@@ -109,29 +109,29 @@ var h = [12,13,14];
  if(a1>5 && b1<25){
     console.log("A");
  }else{
-    console.log("B")
+    console.log("B");
  }
  // practice 2 
  let isAdmin = true;
  let islogedin = false ;
  if (isAdmin || islogedin){
-    console.log("Access granted")// this will run
+    console.log("Access granted");// this will run
  }else{
-    console.log("Access denied")
+    console.log("Access denied");
  }
  // practice 3 
  let temp = 35;
  if(!(temp<30)){
     console.log("Today is hot");// this will run
  }else{
-    console.log("Pleasent")
+    console.log("Pleasent");
  }
  // Practice 4
  let a99=0;
  if(a99){
     console.log("Truthy");
  }else{
-    console.log("Falsy")// this will run because 0 is falsy 
+    console.log("Falsy");// this will run because 0 is falsy 
  }
  // Practice 5-- imp
  let mark =78;
@@ -140,7 +140,7 @@ var h = [12,13,14];
 // practice 6 -- 
 let points = 120;
 let status = points > 100 ? "Gold" : "points" > 60 ? "Silver" : "Bronze";
-console.log("status")
+console.log("status");
 // Practice 7 
 let login = true;
 let hasToken = false;
@@ -148,6 +148,30 @@ let access = login && hasToken ? "Allow" : "Deny";
 console.log("access");
 //---------------------------------------------------
 // Increment & Decrement Practice 
+// 1st
 let m=10;
 console.log(m--);//10
 console.log(m);
+//2nd 
+let n=12;
+console.log(n++);
+console.log(n);
+//3rd 
+let n2=12;
+res= n++ + ++n;
+console.log(res);//12 
+// 4th 
+let likes = 100;
+function likepost(){
+   return ++likes;
+}
+console.log(likepost());
+console.log(likes);
+//5th
+let count = 5;
+if (count-- == 5){
+   console.log("Mathced");
+}else{
+      console.log("Mathced");
+}
+
