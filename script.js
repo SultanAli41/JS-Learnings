@@ -146,3 +146,8 @@ let login = true;
 let hasToken = false;
 let access = login && hasToken ? "Allow" : "Deny";
 console.log("access");
+//---------------------------------------------------
+// Increment & Decrement Practice 
+let m=10;
+console.log(m--);//10
+console.log(m);
