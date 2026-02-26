@@ -174,4 +174,60 @@ if (count-- == 5){
 }else{
       console.log("Mathced");
 }
+// !! use to check true or falsy like !0 = 1 and then !!0 = 1 this epose true or alse nature of the value 
+let v = 12;
+console.log(++v);//13
+console.log(v++); // now vale is 14 but this will print 13 but next time v will give 14
+//------------------------------------------
+//Control Flows 
+//if else else if 
+if(12>13){
+console("1st");
+}else if(13>10) {
+console.log("2nd");
+}else{
+console.log("3rd");
+};
+//Swtch Case 
+switch(1){
+   case 1:
+   console.log("1st");
+   break;
+   case 2:
+   console.log("2nd");
+   break;
+   case 3:
+   console.log("3rd");
+   break;
+   default:
+}
+// early return pattren
+function Getval(val){
+   if(val< 20) return "D" ;
+   else if(val<50) return "C";
+   else if (val < 75) return "B";
+   else return "A";
 
+}
+Getval(89);
+
+//----Practice Question
+//Q1 -- Student Marks
+function getGrade(marks){
+   if(marks>= 0 && marks<=32) return "Fail";
+   else if (marks>=33 && marks<=59 ) return "D";
+      else if (marks>=60 && marks<=69 ) return "C";
+         else if (marks>=70 && marks<=79 ) return "B";
+            else if (marks>=80 && marks<=89 ) return "A";
+               else if (marks>=90 && marks<=100 ) return "A+";
+                  else return "Invalid marks";
+};
+console.log(getGrade(78));
+//Rock paper Scissors
+function rps(user,computer){
+   if(user === computer) return "draw";
+   if(user === "rock" && computer=== "scissor") return "user";
+      if(user === "scissor" && computer === "paper") return "user";
+         if(user === "paper" && computer === "rock") return "rock";
+};
+rps("rock","scissor")
