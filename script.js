@@ -231,3 +231,44 @@ function rps(user,computer){
          if(user === "paper" && computer === "rock") return "rock";
 };
 rps("rock","scissor")
+// Loops - for repetation 
+// for , while , for each -- > most important 80% 
+// for of , forin
+// Kaha sy jana hai - kahan tk jana hai ? - kasise jana hai ?
+// for
+//for (start; end ; change){}
+for (let i=1; i<=10;i++){
+   console.log(i);
+}
+// kahan sy jana hai ? kahan rukna hai ? , kesy jana hai ?
+// while 
+// while(end){
+//code
+//change
+//}
+//-------------
+let j =1
+while(j<32){
+console.log(j);
+ j++;
+}
+// do while 
+let e=1;
+do {
+console.log(e);// do work minimum one time if statment is false or true
+e++;
+}while(i<2)
+//break-- to stop loop 
+for(let u =1 ; u<201 ;u++){
+   console.log(u);
+   if(u==32){
+      break;
+   }
+}
+//countinue--it will skip the value / element 
+for(y=1;y<=200;y++){
+   if(y == 32){
+      continue;
+   }
+   console.log(y);
+}
