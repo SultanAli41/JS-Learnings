@@ -29,10 +29,15 @@ dance("ghora");
 dance("Kadha");
 dance("cheel");
 dance("kawa");
-function addition (v1 , v2){// parametrs
+function addition (v1 =0 , v2=0){// parametrs and = 0 is default 
     console.log(v1 + v2);
 }
 addition( 3,2);
 addition( 5,5);
 addition( 7,9);
 addition( 78,12);// arguments
+// rest -- when we make many parameter we need many arguments then we use rest in functions
+function rest(a,b,c,...val){
+ console.log(a,b,c,val);
+};
+rest(1,2,3,4,5,6,7,8);
