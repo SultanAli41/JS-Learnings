@@ -58,3 +58,29 @@ for (let a=1 ; a<=100 ; a++){
     }
 }
 console.log(count);
+// continue && Break 
+//Q1:
+for (let i=1; i<=100;i++){
+    if (i%7 === 0){
+        break;
+    }
+    console.log(i);
+}
+// Skip multiple of 3
+for(let p=1;p<=20;p++){
+    if(p%3 === 0){
+      continue;
+    }
+    console.log(p);
+}
+// print firts 5 odds from 1-100
+let count1 =0;
+for(i=1;i<=100;i++){
+    if(i%2===1){
+    count++;
+
+        console.log(i);
+        
+    }
+    if(count == 5 ) break;
+}
