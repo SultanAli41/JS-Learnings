@@ -41,3 +41,10 @@ function rest(a,b,c,...val){
  console.log(a,b,c,val);
 };
 rest(1,2,3,4,5,6,7,8);
+// return
+function hy (v){
+    return 12 + v ;
+}
+let va = hy(12);
+console.log(va);
+//--------
