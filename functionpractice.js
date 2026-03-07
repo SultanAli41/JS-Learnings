@@ -69,8 +69,22 @@ console.log(counter2());
 (function(){
     console.log("Hello");
 })()
-// BIM Calculatore
+// BMI Calculatore
 function bmi(weight,height){
     return weight / (height * height);
 }
 console.log(bmi(55,1.7).toFixed(2));
+//
+function counter(){
+    let count =0 
+    return function(){
+        count++;
+        return count;
+    }
+}
+let c= counter();
+console.log(c());
+console.log(c());
+console.log(c());
+console.log(c());
+console.log(c());
