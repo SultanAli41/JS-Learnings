@@ -85,5 +85,79 @@ let [a,b,,d]=arde;
 // Spread oprater
 let array5=[10,20,30,40,50,60];
 let array6=[...array5];
-
-
+//---------------------------------
+// Practice Questions 
+let fruit =["Apple","Banana","fruit"]
+console.log(fruit[1]);
+fruit.push("Mango");
+fruit.unshift("Pineapple")
+//Push vs unshift
+//remove last item 
+let numbers = [1,2,3,4,5,6,7,8]
+numbers.pop();
+// add red and blue at index 1 
+let colors =["yellow","Green"];
+colors.splice(1,0,"red","blue");
+// Extract middle 3 elemnts 
+let nums=[1,2,3,4,5,6,7,8,9];
+let ans = nums.slice(3,6);
+// Sort array
+let names =["osaf","Razi","ASmar","hakim"]
+// Use map to take squre of each number
+let squre = [1,2,3,4]
+let squrea=squre.map(
+    function(val){
+      return val * val;
+    }
+)
+//use filter to keep numbers greater than 10 :
+let numfil = [10,20,30,40,50];
+let numfila = numfil.filter(function(val){
+   if(val>10){
+    return val ;
+   }
+})
+// Use reduce to find sum of array
+let redarr =[1,2,3,4,5,6,7,8];
+let redarra =redarr.reduce(
+function(acc,val){
+   return acc + val ;
+},0
+)
+// use find to get first value less than 10
+let find =[12,24,43,4,54];
+let finda = find.find(
+    function(val){
+        if(val<10){
+            return val;
+        }
+    }
+) 
+// use some to find student under 35 marks 
+let marksofstudents =[78,54,24,97,77,76,67]
+let ansm =marksofstudents.some(
+    function(val){
+        if(val<35){
+        return val
+        }
+    }
+)
+// use every to check all values are even or not 
+let everyev = [2,4,6,8,10];
+let evev = everyev.every(
+    function(val){
+    if(val % 2 == 0){
+        return val;
+    }
+    }
+)
+// Destructure this array to et first and last name 
+let Fulname =["Ali","Haider"];
+let [firstname,lastname]=Fulname;
+// Merge two arrays using spread opraters 
+let a1 =[1,2];
+let b1 =[3,4];
+let c1 =[...a1,...b1];
+// clone the array proparly (not by refrence)
+let arr =[1,2,3];
+let arr12 = [...arr];
