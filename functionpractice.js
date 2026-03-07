@@ -88,3 +88,16 @@ console.log(c());
 console.log(c());
 console.log(c());
 console.log(c());
+// fnc will return double value
+function double(val){
+ return val * 2;
+}
+console.log(double(10));
+// IIFE to isolate variable 
+(
+function password(){
+    const pswd="secret_password";
+    console.log(pswd);
+}
+)();
+console.log(pswd);
