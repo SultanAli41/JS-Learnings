@@ -101,3 +101,9 @@ function password(){
 }
 )();
 console.log(pswd);
+// Confusions
+//function vs fat arrow function
+// caling simple vs expresion 
+// Closuer & Higher function 
+// closer will rerun other fnc and also use varablie from parent function
+// higher order will take function in argument and also return a function  
