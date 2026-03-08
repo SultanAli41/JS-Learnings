@@ -161,3 +161,7 @@ let c1 =[...a1,...b1];
 // clone the array proparly (not by refrence)
 let arr =[1,2,3];
 let arr12 = [...arr];
+// Slice vs splice 
+//splice remove values - slice get values 
+//for each vs map usage(when we have to make new array on basics o previous arra) 
+// .sort change num into char but we have to write full formula like a.sort((a,b)=>{return a-b})
