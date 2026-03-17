@@ -5,7 +5,18 @@ html,body{
     padding: 0%;
     margin: 0%;
     background-color: #222;
+    position: relative;
+    overflow: hidden;
 }
+#shape{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+/*
 input{
 display: block;
 margin-top: 5px;
@@ -13,6 +24,35 @@ margin-top: 5px;
 button{
     margin-top: 5px;
 }
+.card{
+    width: 30vw;
+    height: 30vh;
+    margin-top:30px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 1px solid #555;
+    overflow: hidden;
+    padding: 5px 0 0 5px;
+    color: white;
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile img{
+width: 100%;
+height: 100%;
+}
+h3{
+margin-top: 1px;
+}
+h5{
+margin-top: 1px;
+}*/
+
 /*
 #btn{
     height:3rem;
