@@ -7,8 +7,30 @@
  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<input type="text" placeholder="Write anything">
-<h1>Total Character : <Span> </Span> </h1>
+  <!-- Form Validation-->
+   <form>
+    <!--We use inline properties in form but these are not safe because these can bypass easily-->
+    <input type="text" name="" id="" placeholder="Name">
+    <div class="small" style="display:none;">
+<br ><br>
+    <small style=" color: red;" >Your name should be more than 2 Character</small>
+    </div>
+    <br><br>
+        <input type="email" name="" id="" placeholder="Email">
+<br><br>
+<select name="" id="">
+  <option value="Male">Male</option>
+    <option value="Female">Female</option>
+      <option value="Other">Other</option>
+</select>
+<br><br>
+        <textarea name="" id="" placeholder="Tell us about you"></textarea>
+<br><br>
+        <input type="submit">
+   </form>
+  <!--<input type="text" placeholder="Write anything">
+<h1>Total Character : <Span> </Span> </h1>-->
+
 <!--Event capturing-- The event start from the targeted element and thrn caputure downward to its child-->
 <!--
 <div class="a">
@@ -122,6 +144,7 @@
   <!--<script src="dom.js"></script>-->
   <!--<script src="DomPractice.js"></script>-->
  <!--<script src="EventListner.js"></script>-->
-<script src="EventListnersPractice.js"></script>
+ <!--<script src="EventListnersPractice.js"></script>-->
+<script src="FormValidation.js"></script>
 </body>
 </html>
