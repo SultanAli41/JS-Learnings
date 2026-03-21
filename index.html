@@ -7,9 +7,35 @@
  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Form Validation-->
+  <div class="validator-container">
+    <form autocomplete="off" autocomplete="nopass" id="authForm" novalidate >
+        <h2>Create Account</h2>
+        
+        <div class="input-group">
+            <label for="email" autocomplete="off">Email Address</label>
+            <input type="email" id="email" name="user-field-unique" autocomplete="off" placeholder="Please Write Email Here">
+            <span class="error-msg" id="emailError">Please enter a valid email.</span>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <span class="error-msg" id="passError">Password does not meet requirements.</span>
+        </div>
+
+        <ul class="requirements">
+            <li id="req-length" class="">Min. 8 characters</li>
+            <li id="req-number" class="">At least one number</li>
+            <li id="req-special" class="">At least one special character</li>
+        </ul>
+
+        <button type="submit" id="submitBtn">Register</button>
+    </form>
+</div>  
+  <!--
+   //Form Validation
    <form>
-    <!--We use inline properties in form but these are not safe because these can bypass easily-->
+    //We use inline properties in form but these are not safe because these can bypass easily like required , minlength and maxlength ect
     <input type="text" name="" id="" placeholder="Name">
     <div class="small" style="display:none;">
 <br ><br>
@@ -28,6 +54,7 @@
 <br><br>
         <input type="submit">
    </form>
+  -->
   <!--<input type="text" placeholder="Write anything">
 <h1>Total Character : <Span> </Span> </h1>-->
 
@@ -145,6 +172,6 @@
   <!--<script src="DomPractice.js"></script>-->
  <!--<script src="EventListner.js"></script>-->
  <!--<script src="EventListnersPractice.js"></script>-->
-<script src="FormValidation.js"></script>
+ <!--<script src="FormValidation.js"></script>-->
 </body>
 </html>
