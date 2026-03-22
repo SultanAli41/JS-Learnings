@@ -1,3 +1,77 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    .card {
+      width: 320px;
+      padding: 25px;
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      color: white;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    .file-name {
+      font-size: 14px;
+      margin-bottom: 20px;
+      opacity: 0.8;
+    }
+
+    .progress-container {
+      width: 100%;
+      height: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .progress-bar {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, #00f2fe, #4facfe);
+      border-radius: 10px;
+    }
+
+    .percentage {
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+/*
 html,body{
     width: 100%;
     height: 100%;
@@ -62,16 +136,16 @@ input {
     border-radius: 6px;
     box-sizing: border-box;
     transition: border-color 0.2s;
-}
+}*/
 
 /* State for JS to toggle */
-input.invalid { border-color: var(--error); }
+/*input.invalid { border-color: var(--error); }
 input.valid { border-color: var(--success); }
 
 .error-msg {
     color: var(--error);
     font-size: 0.8rem;
-    display: none; /* Hidden by default */
+    display: none; Hidden by default 
     margin-top: 4px;
 }
 
@@ -88,7 +162,7 @@ input.valid { border-color: var(--success); }
     margin-right: 8px;
 }
 
-/* Use JS to toggle this class on the <li> */
+//Use JS to toggle this class on the <li> 
 .requirements li.met {
     color: var(--success);
  }
@@ -110,7 +184,7 @@ button:hover { opacity: 0.9; }
 #finalres{
     display: none;
     color: #22c55e;
-}
+}*/
 /*
 #shape{
     width: 20px;
