@@ -91,8 +91,7 @@ input.valid { border-color: var(--success); }
 /* Use JS to toggle this class on the <li> */
 .requirements li.met {
     color: var(--success);
-    text-decoration: line-through;
-}
+ }
 .requirements li.met::before { content: "✓"; }
 
 button {
@@ -108,6 +107,10 @@ button {
 }
 
 button:hover { opacity: 0.9; }
+#finalres{
+    display: none;
+    color: #22c55e;
+}
 /*
 #shape{
     width: 20px;
