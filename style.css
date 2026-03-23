@@ -4,7 +4,36 @@
       box-sizing: border-box;
       font-family: Arial, sans-serif;
     }
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
 
+/* Light Theme */
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/*
     body {
       height: 100vh;
       display: flex;
