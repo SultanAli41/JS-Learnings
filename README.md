@@ -1,1 +1,1 @@
-This repo contain all my js learning
+This repo contain all my js learning and small practices
