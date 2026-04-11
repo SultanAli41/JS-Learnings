@@ -36,5 +36,6 @@ prom.then(
     }).catch(
     function(){
        console.log("above");
+       console.log("above");
     }
 )
